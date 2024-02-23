@@ -1,13 +1,13 @@
 # Automation Test Rocket Chat
 
-**Title**: Rocket Chat Testing\
+**Judul**: Rocket Chat Testing\
 **OverView**: Test yang dilakukan terdiri dari skrip end to end Regression test secara otomatis untuk semua fungsi dasar di https://www.rocket.chat, yang ditulis dalam Selenium webdriver dengan Python. Tujuan dari QA Regression adalah untuk memastikan bahwa seluruh sistem bekerja dengan sempurna setelah ada perubahan kode.
 
-Skrip pengujian memungkinkan pengujian beberapa browser dengan semua kasus pengujian yang akan dijalankan pada sebagian besar browser populer: Chrome, Firefox, Safari, dan IE.\.
+Skrip pengujian memungkinkan pengujian beberapa browser dengan semua kasus pengujian yang akan dijalankan pada sebagian besar browser populer: Chrome, Firefox, Safari, dan IE\.
 Proyek ini juga mendukung menjalankan pengujian Selenium Webdriver dengan Python di BrowserStack.\.
 Laporan pengujian dapat dibuat dengan HTML dan Allure plugins.\
 
-**Features**:
+**Fitur**:
 
 1. Masuk ke Rocket.chat dengan Nama Pengguna dan Kata Sandi
 2. Buat Pengguna Baru
@@ -77,21 +77,25 @@ Pada Mac, buka jalur "/usr/local/bin" dan rekatkan driver yang sudah di-unzip.
  `cd QA.Automation`
 
 **To run all the Test cases use below commands:**\
- 1. `pytest Tests`\
- 2. `pytest -v -s Tests`\
- 3. `py.test -v -s Tests`
+
+1.  `pytest Tests`\
+2.  `pytest -v -s Tests`\
+3.  `py.test -v -s Tests`
 
 **To run a single Test case use below commands:**\
- 1. `pytest Tests/filename.py`\
- 2. `pytest -v -s Tests/filename.py`\
- 3. `py.test -v -s Tests/filename.py`
+
+1.  `pytest Tests/filename.py`\
+2.  `pytest -v -s Tests/filename.py`\
+3.  `py.test -v -s Tests/filename.py`
 
 **To generate html report in test execution use below command**\
- 1. `Pytest -v -s —html = report.html filename.py`
 
-**To generate allure report in test execution use below command**  
- 1. `pytest -v -s --alluredir="<path of the folder>" Tests/filename.py`\
- Here path is : "./reports/allure_reports"
+1.  `Pytest -v -s —html = report.html filename.py`
+
+**To generate allure report in test execution use below command**
+
+1.  `pytest -v -s --alluredir="<path of the folder>" Tests/filename.py`\
+    Here path is : "./reports/allure_reports"
 
 **View html reports in a browser**\
  Di pycharm, salin path report.html dan tempelkan di browser atau langsung buka file report.html
